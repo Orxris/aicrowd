@@ -40,6 +40,6 @@ if(Sys.getenv('WEEKLY_EVALUATION', 'false') == 'true') {
   write.table(x = prices, file = output_prices_file, row.names = FALSE, col.names=FALSE, sep = ",")
 
 } else {
-  claims = predict_average_claim(trained_model, Xraw)
+  claims = predict_expected_claim(trained_model, Xraw)
   write.table(x = claims, file = output_claims_file, row.names = FALSE, col.names=FALSE, sep = ",")
 }
