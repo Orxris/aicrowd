@@ -22,7 +22,7 @@ preprocess_X_data <- function (x_raw){
   
   # ---------------------------------------------------------------------
   # The result trained_model is something that you will save in the next section
-  return(X_raw) # change this to return the cleaned data
+  return(x_raw) # change this to return the cleaned data
 }
 
 
